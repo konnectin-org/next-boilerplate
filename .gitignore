@@ -5,12 +5,31 @@
 /.pnp
 .pnp.js
 
+# Database
+*.db
+
 # testing
 /coverage
 
+# storybook
+storybook-static
+
+# playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
 # next.js
-/.next/
-/out/
+/.next
+/out
+
+# next-sitemap
+public/robots.txt
+public/sitemap.xml
+public/sitemap-*.xml
+
+# cache
+.swc/
 
 # production
 /build
@@ -18,19 +37,22 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
 # local env files
 .env*.local
 
+# local folder
+local
+
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Sentry Config File
+.sentryclirc
