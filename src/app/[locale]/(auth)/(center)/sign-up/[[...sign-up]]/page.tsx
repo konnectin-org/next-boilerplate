@@ -1,13 +1,11 @@
+import { SignUp } from '@clerk/nextjs';
 import { getTranslations } from 'next-intl/server';
-
-import { Sponsors } from '@/components/Sponsors';
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
     locale: props.params.locale,
-    namespace: 'Index',
+    namespace: 'SignUp',
   });
-
 
   return {
     title: t('meta_title'),
@@ -15,14 +13,6 @@ export async function generateMetadata(props: { params: { locale: string } }) {
   };
 }
 
+const SignUpPage = () => <SignUp />;
 
-export default function Index() {
-  return (
-    <>
-      <p>
-        Explore our GitHub project for more information about{' '}
-        <Sponsors/>
-      </p>
-    </>
-  );
-}
+export default SignUpPage;
