@@ -48,5 +48,3 @@ Project Structure.
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
-
-test
