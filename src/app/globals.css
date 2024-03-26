@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --font-family-display: "Satoshi", "sans-serif";
-
-  --breakpoint-3xl: 1920px;
-
-  --color-neon-pink: oklch(71.7% 0.25 360);
-  --color-neon-lime: oklch(91.5% 0.258 129);
-  --color-neon-cyan: oklch(59.3% 0.139 195.8);
-  --color-neon-cyen: oklch(79.3% 0.139 195.8);
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
